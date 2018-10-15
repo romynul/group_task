@@ -4,13 +4,20 @@
 <head>
     <title>Title</title>
 	<style>
+	
 	.rs_menu
 	{
-		height: 20%;
-		width: 30%;
-		background-color: #b7b7b7;
-		display:block;
-		margin:auto;
+		
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:28em;
+    height:20em;
+    margin-top: -9em;
+    margin-left: -15em; 
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.4);
+	color:#fff;
 	}
 	
 	input[type="text"] {
@@ -18,37 +25,66 @@
     border-radius: 6px;
     margin-bottom: 3%;
     font-size: 16px;
+	color:#000;
 	}
+	table {
+    display: block;
+    margin-left: 20%;
+	}
+	input[type="submit"] {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 6px 29px;
+    margin-left: 20%;
+	}
+	input[type="reset"] {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 6px 29px;
+    margin-left: 10%;
+	}
+
+	button 
+	{
+	font-size: 17px;
+    font-weight: bold;
+    padding: 6px 20%;
+    margin-left: 20%;
+    margin-top: 2%;
+	}
+	span {
+    font-weight: bold;
+    font-size: 18px;
+	}
+	
 	</style>
 </head>
-<body>
+<body background="background.jpeg">
 <div class="rs_menu">
+<h1 align="center">Menu Management System</h1>
 <form name="Restuarent Menu" method="post" action="write.php">
     <table>
         <tr>
-            <td>Menu</td>
+            <td><span>Menu</span></td>
             <td>:</td>
             <td><input type="text" name="menu" placeholder="Menu Name"/></td>
         </tr>
         <tr>
-            <td>Item</td>
+            <td><span>Item</span></td>
             <td>:</td>
             <td><input type="text" name="item" placeholder="Item Name"/></td>
         </tr>
 		<tr>
-		<td>Price</td>
+		<td><span>Price</span></td>
             <td>:</td>
             <td><input type="text" name="price" placeholder="price"/></td>
 		</tr>
-        <tr>
-            <td><input type="submit" value="Save"/></td>
-            <td><input type="reset" /> </td>
-            
-        </tr>
+        
     </table>
+	<input type="submit" value="Save"/>
+        <input type="reset" />
 </form>
-<hr>
-<a href='read.php'>See Menu</a>
+<button>See Menu</button>
 </div>
 </body>
 </html>

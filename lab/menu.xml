@@ -1,0 +1,21 @@
+<menudata>
+ <menu>Pizza</menu>
+ <item>
+  <name>small</name>
+  <price>5</price>
+ </item>
+</menudata>
+<menudata>
+ <menu>Pizza</menu>
+ <item>
+  <name>big</name>
+  <price>10</price>
+ </item>
+</menudata>
+<menudata>
+ <menu>Buger</menu>
+ <item>
+  <name>Double</name>
+  <price>10</price>
+ </item>
+</menudata>
